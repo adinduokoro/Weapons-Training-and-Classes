@@ -8,9 +8,6 @@ const Hero = () => {
       <div className="hero__image">
         {/* <img src={heroImg} alt="" /> */}
       </div>
-      <div className="hero__image">
-        {/* <img src={heroImg} alt="" /> */}
-      </div>
     </div>
   )
 }
