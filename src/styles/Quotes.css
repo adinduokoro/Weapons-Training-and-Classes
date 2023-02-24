@@ -1,0 +1,23 @@
+.quote{
+  background-color: #ffd700;
+  width: 100%;
+  height: 14vh;
+  display: flex;
+}
+
+.quote .quote__container{
+  margin: auto;
+  display: flex;
+  gap: 20px;
+  color: #141414;
+  text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+}
+
+.quote h{
+  font-weight: 800;
+}
+
+.quote svg{
+  scale: 1.5;
+}
