@@ -1,0 +1,53 @@
+.navbarTop{
+  height: 1rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #141414;
+  color:#ebebeb;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.navbarTop .contact{
+  display: flex;
+}
+
+.navbarTop .phone{
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.navbarTop .email{
+  display: flex;
+  align-items: center;
+}
+
+.navbarTop .contact svg{
+  margin-right: 0.25rem;
+  scale: 0.5;
+}
+
+.navbarTop .contact p{
+  font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbarTop{
+    padding: 0;
+  }
+
+  .navbarTop .phone{
+    margin-right: 5px;
+  }
+
+  .navbarTop .contact svg{
+    margin-right: 0;
+    scale: 0.5;
+  }
+
+  .navbarTop .contact p{
+    font-size: 10px;
+  }
+}
+
