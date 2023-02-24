@@ -14,6 +14,10 @@ const NavbarBottom = () => {
     setClicked(!clicked)
   }
 
+  const closeMenu = () => {
+    setClicked(false)
+  }
+
 
   return (
     <nav className='navbarBottom'>
@@ -27,7 +31,7 @@ const NavbarBottom = () => {
         {nav.map((item,index) =>{
           return(
             <li key={index}>
-              <Link path={item.path} className={item.cName}>
+              <Link onClick={closeMenu} to={item.path} className={item.cName}>
               <i className={item.icon}></i>
                 {item.text}
               </Link>

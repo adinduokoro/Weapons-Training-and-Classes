@@ -6,6 +6,7 @@
   color:#ebebeb;
   align-items: center;
   padding: 0.5rem 1rem;
+  z-index: 56;
 }
 
 .navbarTop .contact{

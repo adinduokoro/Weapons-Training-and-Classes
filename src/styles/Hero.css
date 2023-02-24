@@ -1,0 +1,30 @@
+.hero{
+  height: 79vh;
+  width: 100%;
+  position: relative;
+  border: 2px solid darkgreen;
+  
+}
+
+.hero__image{
+  height: 100%;
+}
+
+/* img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.overlay{
+  border: 2px solid darkgreen;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+} */
