@@ -10,7 +10,7 @@ const Hero = () => {
       </div>
       <div className="overlay"></div>
       <div className="hero__info">
-        <h1>FIREAMRS TRAINING</h1>
+        <h1>FIREARMS TRAINING</h1>
         <p>We offer classes from complete beginners to the highest level of military and law enforcement</p>
         <div className='btn'>
           <div className="hero__btn">Sign Up</div>

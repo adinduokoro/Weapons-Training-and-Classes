@@ -1,24 +1,13 @@
 import React from 'react'
 import Hero from '../components/Hero'
+import AboutUs from '../components/AboutUs'
 
 
 const HomePage = () => {
   return (
     <div className='homePage'>
       <Hero />
-      <div>hello world</div>
-      <div>hello world</div>
-      <div>hello world</div>
-      <div>hello world</div>
-      <div>hello world</div>
-      <div>hello world</div>
-      <div>hello world</div>
-      <div>hello world</div>
-      <div>hello world</div>
-      <div>hello world</div>
-      <div>hello world</div>
-      <div>hello world</div>
-      <div>hello world</div>
+      <AboutUs />
     </div>
   )
 }
