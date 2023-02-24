@@ -1,8 +1,10 @@
 .hero{
+  margin-top: 10rem;
   height: 79vh;
   width: 100%;
   position: relative;
   border: 2px solid darkgreen;
+  z-index: 100;
   
 }
 
