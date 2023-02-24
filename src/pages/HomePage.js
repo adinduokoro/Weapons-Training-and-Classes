@@ -6,8 +6,19 @@ const HomePage = () => {
   return (
     <div className='homePage'>
       <Hero />
-      {/* About us */}
-      {/* Quote */}
+      <div>hello world</div>
+      <div>hello world</div>
+      <div>hello world</div>
+      <div>hello world</div>
+      <div>hello world</div>
+      <div>hello world</div>
+      <div>hello world</div>
+      <div>hello world</div>
+      <div>hello world</div>
+      <div>hello world</div>
+      <div>hello world</div>
+      <div>hello world</div>
+      <div>hello world</div>
     </div>
   )
 }

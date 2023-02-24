@@ -4,11 +4,10 @@
   margin-right: 20px;
   font-size: 25px;
   font-family: 'Bebas Neue', cursive;
-  background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+  background: linear-gradient(45deg, transparent 5%, #ff0000 5%);
   border: 0;
   color: #ebebeb;
   letter-spacing: 3px;
-  box-shadow: 6px 0px 0px #fdd700;
   outline: transparent;
   position: relative;
   text-decoration: none;

@@ -3,23 +3,21 @@
   height: 79vh;
   width: 100%;
   position: relative;
-  border: 2px solid darkgreen;
   z-index: 30;
   
 }
 
-.hero__image{
+.hero .hero__image{
   height: 100%;
 }
 
-/* img{
+.hero img{
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-.overlay{
-  border: 2px solid darkgreen;
+.hero .overlay{
   position: absolute;
   width: 100%;
   height: 100%;
@@ -28,5 +26,149 @@
   right: 0;
   bottom: 0;
   z-index: 2;
-  background-color: rgba(0, 0, 0, 0.5);
-} */
+  background-color: rgba(0, 0, 0, 0.75);
+} 
+
+.hero .hero__info{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 5;
+}
+
+.hero h1{
+  letter-spacing: 3px;
+  color: #ebebeb;
+  font-size: 3rem;
+  white-space: nowrap;
+  font-weight: 800;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 
+                0px 8px 13px rgba(0,0,0,0.1), 
+                0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.hero p{
+  color: white;
+  font-size: 1.25rem;
+  padding: 0.5rem 0 2rem 0;
+  text-align: center;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 
+                0px 8px 13px rgba(0,0,0,0.1), 
+                0px 18px 23px rgba(0,0,0,0.1);
+
+}
+
+.hero .hero__btn, .hero__btn::after {
+  width: 100%;
+  height: 100%;
+  margin-right: 20px;
+  font-size: 25px;
+  font-family: 'Bebas Neue', cursive;
+  background: linear-gradient(45deg, transparent 5%, #ff0000 5%);
+  border: 0;
+  color: #ebebeb;
+  letter-spacing: 3px;
+
+  outline: transparent;
+  position: relative;
+  text-decoration: none;
+  
+  
+}
+
+.hero .hero__btn::after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #fdd700 3%, #fdd700 5%, #ff0000 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #fdd700;
+  clip-path: var(--slice-0);
+
+}
+
+.hero .hero__btn:hover::after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+@media screen and (max-width: 550px) {
+    .hero h1{
+      white-space: normal;
+  }
+}
+
+@media screen and (max-width:425px ){
+  
+  .hero h1{
+    letter-spacing: 0;
+    white-space: normal;
+  }
+
+  .hero p{
+    font-size: 1rem;
+    padding: 0.5rem 0 1rem 0;
+    text-align: center;
+  }
+}

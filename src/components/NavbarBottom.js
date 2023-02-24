@@ -4,7 +4,7 @@ import logo from '../images/scorpionTactical.png'
 import { Link } from 'react-router-dom'
 import { nav } from '../data/Data.js'
 import { useState } from 'react'
-import '../styles/Button.css'
+import '../styles/NavButton.css'
 
 
 const NavbarBottom = () => {
