@@ -4,7 +4,8 @@ import logo from '../images/scorpionTactical.png'
 import { Link } from 'react-router-dom'
 import { nav } from '../data/Data.js'
 import { useState } from 'react'
-import { click } from '@testing-library/user-event/dist/click'
+import '../styles/Button.css'
+
 
 const NavbarBottom = () => {
   const [clicked, setClicked] = useState(false)

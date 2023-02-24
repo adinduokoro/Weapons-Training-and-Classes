@@ -28,7 +28,7 @@ export const nav = [
   {
     text: "Sign Up",
     path: "/contact",
-    cName: "btn",
+    cName: "signUp__btn",
   },
 ]
 
