@@ -14,10 +14,26 @@
     0px -4px 10px rgba(255,255,255,0.3);
 }
 
-.quote h{
-  font-weight: 800;
+.quote h1{
+  font-weight: 700;
 }
 
 .quote svg{
   scale: 1.5;
+}
+
+@media screen and (max-width: 621px) {
+  .quote{
+    font-size: 12px;
+  }
+
+  .quote .quote__container{
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 478px){
+  .quote{
+    font-size: 10px;
+  }
 }
