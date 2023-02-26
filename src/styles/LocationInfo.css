@@ -1,5 +1,5 @@
 .location{
-  height: 57vh;
+  height: auto;
   background-color: #222222;
 }
 
@@ -100,7 +100,7 @@
 
   .location .location__text{
     padding: 0;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
     align-items: center;
     text-align: center;
     gap: 2rem;
