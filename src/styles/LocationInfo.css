@@ -1,0 +1,112 @@
+.location{
+  height: 57vh;
+  background-color: #222222;
+}
+
+.location .location__container{
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.location .location__img{
+  flex: 2;
+  width: 100%;
+  height: 100%;
+  padding: 4rem;
+}
+
+.location__img img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 54px 55px, rgba(0, 0, 0, 0.24) 0px -12px 30px, rgba(0, 0, 0, 0.24) 0px 4px 6px, rgba(0, 0, 0, 0.34) 0px 12px 13px, rgba(0, 0, 0, 0.18) 0px -3px 5px;
+}
+
+.location .location__text{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  gap: 4rem;
+  white-space: nowrap;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 
+  0px 8px 13px rgba(0,0,0,0.1), 
+  0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.location .location__text h1{
+  color: #ffd700;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.location .location__text p{
+  color: #ebebeb;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1024px){
+  .location .location__img{
+    flex: 2;
+    width: 100%;
+    height: 100%;
+    padding: 4rem ;
+  }
+
+  .location .location__text{
+    padding: 4rem 2rem;
+  }
+}
+
+@media screen and (max-width: 835px){
+  .location .location__img{
+    width: 100%;
+    height: 100%;
+    padding: 4rem 2rem ;
+  }
+
+  .location .location__text{
+    padding: 4rem 2rem;
+    gap: 3rem;
+    white-space: nowrap;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 
+    0px 8px 13px rgba(0,0,0,0.1), 
+    0px 18px 23px rgba(0,0,0,0.1);
+  }
+
+  .location .location__text h1{
+    font-size: 1.5rem;
+  }
+  
+  .location .location__text p{
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .location{
+    height: auto;
+  }
+  
+  .location .location__container{
+    flex-direction: column;
+  }
+
+  .location .location__img{
+    flex: 1;
+    padding: 4rem;
+  }
+
+  .location .location__text{
+    padding: 0;
+    padding-bottom: 4rem;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    white-space: nowrap;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 
+    0px 8px 13px rgba(0,0,0,0.1), 
+    0px 18px 23px rgba(0,0,0,0.1);
+  }
+}
