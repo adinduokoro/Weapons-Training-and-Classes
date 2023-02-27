@@ -7,14 +7,13 @@ import Info from "../components/Info.js"
 
 const LocationPage = () => {
   return (
-    <div className="locationPage">LocationPage
+    <div className="locationPage">
       <HalfHero 
         title="LOCATION"
         image={halfHeroImg}
       />
       <LocationInfo />
       <Info />
-
     </div>
   )
 }

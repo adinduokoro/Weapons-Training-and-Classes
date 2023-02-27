@@ -1,0 +1,54 @@
+.package{
+  width: 100%;
+  background-color: #222222;
+
+}
+
+.package .package__info ul{
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.package .package__title{
+  flex: 4;
+  border-right: 2px solid #ff3333cc;
+  font-size: 12px;
+  color: #ebebeb;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 
+                0px 8px 13px rgba(0,0,0,0.1), 
+                0px 18px 23px rgba(0,0,0,0.1); 
+}
+
+.package .package__price{
+  flex: 1;
+  color: #ffd700;
+  padding-right: 10px;
+
+}
+
+.package .package__text{
+  flex: 8;
+  color: #ebebeb;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 
+  0px 8px 13px rgba(0,0,0,0.1), 
+  0px 18px 23px rgba(0,0,0,0.1);
+}
+
+@media screen and (max-width: 912px) {
+  .package .package__title{
+    font-size: 10px;
+    padding-right: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .package .package__info ul{
+    flex-direction: column;
+    gap: 10px;
+    padding: 2rem 0;
+  }
+}

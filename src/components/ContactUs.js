@@ -14,6 +14,7 @@ const ContactUs = () => {
             <input type="text" className='input__field' placeholder='Email' />
             <input type="text" className='input__field' placeholder='Phone Number' />
             <textarea type="text" rows="4" placeholder='Message'></textarea>
+            {/* add button */}
           </form>
         </div>
         <div className="contactUs__right">
