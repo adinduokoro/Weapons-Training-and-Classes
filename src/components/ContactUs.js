@@ -14,7 +14,11 @@ const ContactUs = () => {
             <input type="text" className='input__field' placeholder='Email' />
             <input type="text" className='input__field' placeholder='Phone Number' />
             <textarea type="text" rows="4" placeholder='Message'></textarea>
-            {/* add button */}
+            <button class="send-button" id="submit" type="submit" value="SEND">
+              <div class="alt-send-button">
+                <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+              </div>
+            </button>
           </form>
         </div>
         <div className="contactUs__right">
